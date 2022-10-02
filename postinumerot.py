@@ -7,18 +7,21 @@ def get_postal_numbers(paikka: str) -> list:
         sisalto = material.read()
 
     postinumerot = json.loads(sisalto)
-
-
-    
     koodit = []
 
-    for koodi, nimi in postinumerot.items():
-        if nimi == paikka.upper():
-            koodit.append(koodi)
+    if paikka.upper() == "SMARTPOST" or paikka.upper() == "SMART POST":
+        for koodi, nimi in postinumerot.items():
+            if nimi == "SMARTPOST" or "SMART POST":
+                koodit.append(koodi)
+    else:
+        for koodi, nimi in postinumerot.items():
+            if nimi == paikka.upper():
+                koodit.append(koodi)
     
     if koodit:
         koodit.sort()
         print(', '.join(koodit))
+        print(len(koodit))
     else:
         print("Tuntematon postitoimipaikka")
 
