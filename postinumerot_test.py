@@ -7,8 +7,8 @@
 from postinumerot import get_postal_numbers
 
 def test_get_one_num_from_name():
-    paikka = input("Antaisitko postitoimipaikan: ")
-    assert get_postal_numbers(paikka) == ["73460"]
+    
+    assert get_postal_numbers("Muuruvesi") == ["73460"]
 
 def test_get_several_numbers():
     paikka = input("Antaisitko postitoimipaikan: ")
