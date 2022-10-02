@@ -11,10 +11,10 @@ def test_get_one_num_from_name():
     assert get_postal_numbers("Muuruvesi") == ["73460"]
 
 def test_get_several_numbers():
-    paikka = input("Antaisitko postitoimipaikan: ")
-    lista = get_postal_numbers(paikka)
+    
+    lista = get_postal_numbers("Helsinki")
     assert len(lista) >= 2
 
 def test_get_absolutely_none():
-    paikka = input("Antaisitko postitoimipaikan: ")
-    assert get_postal_numbers(paikka) == []
+    
+    assert get_postal_numbers("Jotain") == []
