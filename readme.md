@@ -1,5 +1,6 @@
 # Yksikkötestaus Pytest-työkalulla
 # Tehdaan yhdessa!!!!
+# Luodaan jotain!!!
 
 Näissä tehtävissä harjoittelemme koodin refaktorointia ja yksikkötestausta kirjoittamalla testejä aikaisemmin koodatulle `postinumerot.py`-skriptille (edellisen viikon tehtävän toinen osa).
 
