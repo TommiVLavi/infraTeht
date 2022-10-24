@@ -26,5 +26,5 @@ jobs:
           pytest
       - name: Generate coverage report
         run: |
-	  coverage run -m pytest postinumerot_test.py
-	  coverage report -m
+          coverage run -m pytest postinumerot_test.py
+          coverage report -m
